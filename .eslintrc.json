@@ -1,0 +1,21 @@
+{
+    // 기존 설정파일을 확장하는 개념으로, 배열로 나열되어있는 설정 파일들을 계속 덧붙이는 느낌으로 이해하면 된다.
+    "extends": ["airbnb", "plugin:prettier/recommended"], 
+    // extends 와 비슷하지만 사용자가 명시적으로 필요한 것들을 extends 에 적어줘야 하는 점에서 다르다. 즉, 제공만 해주는 것이라 보면 된다.
+    "plugins": ["prettier"],
+    // 글로벌 객체를 ESLint가 인식하게 하는 부분으로 여기서는 document 혹은 window 를 인식할 수 있도록 browser 값을 true 로 해주었고 
+    // jest를 사용하기 위해서 그 값도 true 로 해준 것을 볼 수 있다.
+    "env": {
+      "browser": true,
+      "jest": true
+    },
+    // 말 그대로 ESLint 를 적용하지 않을 폴더나 파일을 명시하는 옵션이다.
+    "ignorePatterns": ["node_modules/"],
+    // rules 는 extends 와 plugins 에서 제공되는 규칙들을 세부적으로 설정하는 
+    // 부분으로 배열의 첫번째 값에 따라 표시하는 방식이 다르다.
+    "rules": {
+      "react/jsx-filename-extension": ["warn", { "extensions": [".js", ".jsx"] }],
+      "prettier/prettier" : ["error", {"endOfLine": "auto"}],
+      "no-console" : "off"
+     }
+}
