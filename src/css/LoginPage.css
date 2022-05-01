@@ -1,0 +1,94 @@
+.container {
+    width: 100% !important;
+    height: 100vh;
+    background: url(../image/login_bg_01.jpg) center center;
+    background-size: cover;
+    position: relative;
+  }
+  .login_wrap{
+    position: relative;
+    top: calc(45% - 155px);
+    width: 380px;
+    margin: 0 auto;
+    background: #fff;
+  }
+  #login-logo-area{
+    background: white;
+    box-sizing: border-box;
+    padding: 0 22px;
+    width: 100%;
+    text-align: center;
+    height: 116px;
+    font-size: 21px;
+    line-height: 116px;
+  }
+  #login-area{
+    background: white;
+    padding: 0 22px;
+    min-height: 144px;
+  }
+  .login-input-area{
+    box-sizing: border-box;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    padding: 0 40px 0 10px;
+    width: 100%;
+    height: 37px;
+    position: relative;
+  }
+  .login-input{
+    box-sizing: border-box;
+    margin: 0;
+    outline: none;
+    border: none;
+    padding: 0;
+    width: 100%;
+    height: 35px;
+    line-height: 35px;
+  }
+  .login-button{
+    color: white;
+    background: #76838f;
+    border-radius: 2px;
+    width: 100%;
+    height: 40px;
+    border: none;
+    cursor: pointer;
+  }
+  .account-area{
+    background: white;
+    padding: 15px 22px 35px;
+  }
+  #rememberid{
+    margin-right: 5px;
+    float: left;
+    width: 16px;
+    height: 16px;
+  }
+  #rememberid-label{
+    float: left;
+    font-size: 13px;
+    line-height: 16px;
+    color: #1A1A1B;
+  }
+  #signup{
+    margin-top: -2px;
+    font-size: 13px;
+    color: #1A1A1B;
+    float: right;
+  }
+  #pw_search{
+    margin-top: -2px;
+    font-size: 13px;
+    color: #1A1A1B;
+    float: right !important;
+  }
+  .account-area a+a::after{
+    width: 1px;
+    height: 12px;
+    background: rgb(118, 118, 118);
+    display: inline-block;
+    content: '';
+    margin: 0 6px;
+    vertical-align: -1px;
+  }
