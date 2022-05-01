@@ -1,15 +1,10 @@
+/* eslint-disable no-unused-vars */
 /* eslint-disable react/button-has-type */
 import React, { useState } from "react";
 
 function MainPage() {
   const [count, setCount] = useState(0);
 
-  const onIncrease = () => {
-    setCount((prevCount) => prevCount + 1);
-  };
-  const onDecrease = () => {
-    setCount((prevCount) => prevCount - 1);
-  };
   // function onIncrease() {
   //     setCount(count+1);
   // }
@@ -23,8 +18,6 @@ function MainPage() {
       <span>로그인 성공</span>
       <br />
       <h1>{count}</h1>
-      <button onClick={onIncrease}>+1</button>
-      <button onClick={onDecrease}>-1</button>
     </div>
   );
 }
