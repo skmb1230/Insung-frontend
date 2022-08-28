@@ -5,7 +5,7 @@
 ## `npm start`
 
 ## `깃 브랜치 테스트 두번째`
-## `마스터에 pr 날릴수있나?`
+## `마스터에 pr 날릴수있나??`
 
 리액트 http://localhost:3000
 스프링 부트 http://localhost:9090 local
